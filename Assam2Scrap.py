@@ -8,7 +8,7 @@ url = s[0]
 i = int(s[1]) -1
 print("starting from i=",i,"at",url)
 from huggingface_hub import HfApi
-api = HfApi(token="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")
+api = HfApi(token="some_secret")
 def upload(I,DID,Api):
   Api.upload_file(
       path_or_fileobj=f"NLP/Assam2/data_{I}_{DID}.txt",
